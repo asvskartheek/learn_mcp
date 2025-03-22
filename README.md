@@ -19,10 +19,19 @@ mcp dev server.py
     resource://{param}
     ```
 - All resources must have URI not name
+
+### Smolagents Integration 🤖
+- Use `ToolCollection.from_mcp()` to get MCP tools
+- Initialize CodeAgent with tools and model
+
+Example implementation can be found in [`mcp_smolagents.py`](./mcp_smolagents.py)
+
 ## Questions 🤔
 
 ### Transport Types (STDIO vs SSE) 🔄
 *Note: Maybe [MCP Transports documentation](https://modelcontextprotocol.io/docs/concepts/transports) has answers for this*
+
+*Rough understanding so far is STDIO is used for locally hosted MCP servers and SSE for hosted ones.*
 
 - [ ] STDIO (Standard Input/Output)
     - How does it handle communication?
@@ -49,12 +58,6 @@ mcp dev server.py
 
 ---
 ### MCP Integration with AI Agents 🤖
-[SmolagentsTools Integration Guide](https://huggingface.co/docs/smolagents/tutorials/tools#tool-collection-from-any-mcp-server)
-
-- [ ] Integration with Smolagents
-    - Required components
-    - Setup steps
-    - Best practices
 - [ ] Integration with Langgraph
     - Architecture considerations
     - Implementation steps
