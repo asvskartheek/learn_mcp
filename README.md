@@ -19,30 +19,48 @@ mcp dev server.py
     resource://{param}
     ```
 - All resources must have URI not name
--------------------
-<details>
-<summary>What is transport type? What difference does STDIO and SSE make?</summary>
-???
-</details>
+## Questions 🤔
 
-<details>
-<summary>What does the command and arguments mean on the Inspector?</summary>
-I ran with default settings
+### Transport Types (STDIO vs SSE) 🔄
+*Note: Maybe [MCP Transports documentation](https://modelcontextprotocol.io/docs/concepts/transports) has answers for this*
 
-```
-uv run --with mcp mcp run server.py
-```
-<p style="color: red; font-weight: bold;">Maybe <a href="https://modelcontextprotocol.io/docs/concepts/transports">MCP Transports</a> in resources will have the answer to this</p>
+- [ ] STDIO (Standard Input/Output)
+    - How does it handle communication?
+    - Use cases and limitations
+- [ ] SSE (Server-Sent Events)
+    - Benefits and drawbacks
+    - Implementation differences
+---
 
-???
-</details>
+### Inspector Command Details 🔍
+- [ ] Understanding the command:
+    ```
+    uv run --with mcp mcp run server.py
+    ```
+---
 
-<details>
-<summary>What does ping do? What are sampling and roots?</summary>
+### MCP Protocol Features 📡
+- [ ] Ping functionality
+    - Purpose and implementation
+- [ ] Sampling
+    - What is it?
+- [ ] Roots
+    - What is it?
 
-???
-</details>
+---
+### MCP Integration with AI Agents 🤖
+[SmolagentsTools Integration Guide](https://huggingface.co/docs/smolagents/tutorials/tools#tool-collection-from-any-mcp-server)
+
+- [ ] Integration with Smolagents
+    - Required components
+    - Setup steps
+    - Best practices
+- [ ] Integration with Langgraph
+    - Architecture considerations
+    - Implementation steps
+    - Performance impacts
 
 ## Resources
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk?tab=readme-ov-file#quickstart)
 - [MCP Transports](https://modelcontextprotocol.io/docs/concepts/transports)
+- [SmolagentsTools Integration Guide](https://huggingface.co/docs/smolagents/tutorials/tools#tool-collection-from-any-mcp-server)
